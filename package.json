@@ -1,8 +1,7 @@
 {
   "author": "Jason Salzman",
   "name": "react-add-to-calendar",
-  "description":
-    "A simple and reusable add to calendar button component for React",
+  "description": "A simple and reusable add to calendar button component for React",
   "version": "0.1.5",
   "license": "MIT",
   "homepage": "https://github.com/jasonsalzman/react-add-to-calendar",
@@ -15,7 +14,11 @@
   },
   "main": "dist/react-add-to-calendar.min.js",
   "style": "dist/react-add-to-calendar.min.css",
-  "files": ["*.md", "dist", "lib"],
+  "files": [
+    "*.md",
+    "dist",
+    "lib"
+  ],
   "keywords": [
     "react",
     "add-to-calendar",
@@ -70,7 +73,7 @@
     "lodash": "^4.17.4",
     "mocha": "^3.4.1",
     "mocha-jsdom": "^1.1.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.14.1",
     "prop-types": "^15.5.10",
     "react": "^16.2.0",
     "react-docgen": "^2.15.0",
@@ -85,8 +88,8 @@
     "webpack-hot-middleware": "^2.18.0"
   },
   "peerDependencies": {
-    "react": "^15.5.4 || ^16.0.0",
-    "react-dom": "^15.5.4 || ^16.0.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "optionalDependencies": {
     "moment": "^2.18.1"
