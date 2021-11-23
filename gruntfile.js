@@ -23,7 +23,7 @@ module.exports = function (grunt) {
           'dist/react-add-to-calendar.css': 'src/styles/ReactAddToCalendar.scss'
         },
         options: {
-          sourcemap: 'none',
+          // sourcemap: 'none',
           style: 'expanded'
         }
       },
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
           'dist/react-add-to-calendar.min.css': 'src/styles/ReactAddToCalendar.scss'
         },
         options: {
-          sourcemap: 'none',
+          // sourcemap: 'none',
           style: 'compressed'
         }
       }
@@ -125,14 +125,15 @@ module.exports = function (grunt) {
   })
 
   grunt.loadNpmTasks('grunt-contrib-sass')
-  grunt.loadNpmTasks('grunt-scss-lint')
+  // grunt.loadNpmTasks('grunt-scss-lint')
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-babel')
   grunt.loadNpmTasks('grunt-webpack')
   grunt.loadNpmTasks('grunt-karma')
   grunt.loadNpmTasks('grunt-eslint')
 
-  grunt.registerTask('default', ['watch', 'scsslint'])
-  grunt.registerTask('travis', ['eslint', 'karma', 'scsslint'])
-  grunt.registerTask('build', ['scsslint', 'babel', 'webpack', 'sass'])
+  // grunt.registerTask('default', ['watch', 'scsslint'])
+  // grunt.registerTask('travis', ['eslint', 'karma', 'scsslint'])
+  // grunt.registerTask('build', ['scsslint', 'babel', 'webpack', 'sass'])
+  grunt.registerTask('build', ['babel', 'webpack', 'sass'])
 }

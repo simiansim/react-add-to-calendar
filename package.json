@@ -73,7 +73,7 @@
     "lodash": "^4.17.4",
     "mocha": "^3.4.1",
     "mocha-jsdom": "^1.1.0",
-    "node-sass": "^4.14.1",
+    "sass": "^1.43.4",
     "prop-types": "^15.5.10",
     "react": "^16.2.0",
     "react-docgen": "^2.15.0",
@@ -95,7 +95,8 @@
     "moment": "^2.18.1"
   },
   "scripts": {
-    "build": "NODE_ENV=production grunt build",
+    "linux-build": "NODE_ENV=production grunt build",
+    "build": "grunt build",
     "start": "node server.js",
     "test": "NODE_ENV=test grunt travis",
     "eslint": "eslint **/*.js",
